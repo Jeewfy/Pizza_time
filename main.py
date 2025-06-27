@@ -12,7 +12,7 @@ TOKEN = os.getenv('TOKEN')
 
 async def main():
     logger.add('file.log',
-               format='{YYYY-MM-DD at HH-mm-ss} | {level} | {message}',
+               format='{time:YYYY-MM-DD at HH-mm-ss} | {level} | {message}',
                rotation='3 days',
                backtrace=True,
                diagnose=True)
